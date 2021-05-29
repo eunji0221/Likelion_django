@@ -1,0 +1,20 @@
+<div style="text-align: center">
+<h1>결과 페이지</h1>
+</div>
+<h2>입력한 테스트 전문</h2>
+<div>
+    {{fulltext}}
+</div>
+<h3> 로그인하는 사자들의 인원은 총 {{count}}명으로 이루어져 있습니다.
+    
+    
+</h3>
+<div>
+       {% for word, count in wordDict %}
+
+    <br>
+    <p>어서오세요. 로그인하는 사자들의 {{word}}님!</p>
+    
+    <br>
+    {% endfor %}
+</div>
